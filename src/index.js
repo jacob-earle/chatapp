@@ -18,7 +18,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
-port = process.env.port || 3000;
+port = process.env.PORT || 3000;
 
 // Set public directory
 const publicDirectoryPath = path.join(__dirname, "../public");
